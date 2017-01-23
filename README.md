@@ -91,3 +91,7 @@ Run the normal deploy command: `bundle exec cap <stage> deploy`
 ## ⚗ Improvements 
 - Create a cli interface (as it has been done for the toolbox-generator) to make it easier to follow the configuration (database, project name, template name, etc..)
 - Find the js conflict error with bootstrap.tooltip.js 
+- Decide if the choice I've made for a starter theme (timber-starter) is the good one. Other candidates includes:
+    - [sage (roots.io)](https://github.com/Rareloop/lumberjack) Unfortunately, sage (from roots.io) recently chose to support the blade templating system.
+    - [lumberjack](https://github.com/Rareloop/lumberjack)
+    - [sprig](https://github.com/zach-adams/sprig)
