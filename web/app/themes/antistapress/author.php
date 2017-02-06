@@ -10,11 +10,22 @@
  */
 global $wp_query;
 
-$context = Timber::get_context();
-$context['posts'] = Timber::get_posts();
-if ( isset( $wp_query->query_vars['author'] ) ) {
-	$author = new TimberUser( $wp_query->query_vars['author'] );
-	$context['author'] = $author;
-	$context['title'] = 'Author Archives: ' . $author->name();
+use Timber\Timber;
+use Timber\User as TimberUser;
+use Lumberjack\PostTypes\Post;
+
+$data = Timber::get_context();
+
+if (isset($wp_query->query_vars['author'])) {
+    $author = new TimberUser($wp_query->query_vars['author']);
+
+    $data['author'] = $author;
+    $data['title'] = 'Author Archives: '.$author->name();
+
+    $data['posts'] = Post::query([
+        'author' => $author->ID
+    ]);
 }
-Timber::render( array( 'author.twig', 'archive.twig' ), $context );
+
+
+Timber::render(['author.twig', 'posts.twig', 'generic-page.twig'], $data);

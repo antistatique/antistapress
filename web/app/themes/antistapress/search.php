@@ -9,10 +9,17 @@
  * @since   Timber 0.1
  */
 
-$templates = array( 'search.twig', 'archive.twig', 'index.twig' );
+use Timber\Timber;
+use Lumberjack\PostTypes\Post;
+
+$templates = ['search.twig', 'posts.twig', 'generic-page.twig'];
 $context = Timber::get_context();
 
-$context['title'] = 'Search results for '. get_search_query();
-$context['posts'] = Timber::get_posts();
+$searchQuery = get_search_query();
 
-Timber::render( $templates, $context );
+$context['title'] = 'Search results for '.$searchQuery;
+$context['posts'] = Post::query([
+    's' => $searchQuery
+]);
+
+Timber::render($templates, $context);

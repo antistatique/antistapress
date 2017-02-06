@@ -62,10 +62,10 @@ If you want to change the template folder name, you'll have to subsequently upda
 - `gulp_config.json`
 - The `style.css` located in your template.
 
-#### [Timber/starter-theme](https://github.com/timber/starter-theme)
-We curently use the starter theme from Timber. It uses twig as a templating system. You'll get more info here 
+#### [lumberjack](https://github.com/Rareloop/lumberjack)
+We curently use the starter theme Lumberjack. It uses twig as a templating system. You'll get more info here 
 
-The assets (js, css, vendors) are registered & linked in `function.php`
+The assets (js, css, vendors) are registered & linked in `lumberjack/src/Functions/Assets.php`
 
 
 ## 🚀 Deploy 
@@ -85,8 +85,9 @@ Run the normal deploy command: `bundle exec cap <stage> deploy`
 * Rollback: `cap production deploy:rollback`
 
 ## ⚗ Improvements 
+- Adds WPML as a package
 - Create a cli interface (as it has been done for the toolbox-generator) to make it easier to follow the configuration (database, project name, template name, etc..)
-- Decide if the choice I've made for a starter theme (timber-starter) is the good one. Other candidates includes:
-    - [sage (roots.io)](https://github.com/Rareloop/lumberjack) Unfortunately, sage (from roots.io) recently chose to support the blade templating system.
-    - [lumberjack](https://github.com/Rareloop/lumberjack)
-    - [sprig](https://github.com/zach-adams/sprig)
+- Decide if the choice I've made for a starter theme (Lumberjack) is the good one. Other candidates includes:
+  - [sage (roots.io)](https://roots.io/sage/) Unfortunately, sage (from roots.io) recently chose to support the blade templating system.
+  - [Timber Starter theme](https://github.com/timber/starter-theme)
+  - [sprig](https://github.com/zach-adams/sprig)

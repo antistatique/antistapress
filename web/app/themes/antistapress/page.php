@@ -21,7 +21,15 @@
  * @since    Timber 0.1
  */
 
+use Timber\Timber;
+use Lumberjack\PostTypes\Post;
+
 $context = Timber::get_context();
-$post = new TimberPost();
+$post = new Post();
+
 $context['post'] = $post;
-Timber::render( array( 'page-' . $post->post_name . '.twig', 'page.twig' ), $context );
+
+$context['title'] = $post->title;
+$context['content'] = $post->content;
+
+Timber::render(['generic-page.twig'], $context);

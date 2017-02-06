@@ -1,0 +1,23 @@
+<header class="site-header" role="banner">
+
+  <h1><a href="{{site.link}}">{{site.title}}</a></h1>
+  <nav role="navigation">
+    <ul class="page-list">
+      {% for item in menu.get_items %}
+        <li class="page-list-item {{ item.classes|join(' ') }}">
+          <a class="page-list-link" href="{{ item.link }}">{{ item.title }}</a>
+
+          {% if item.children %}
+            <ul class="page-list">
+              {% for subItem in item.children %}
+                <li class="page-list-item {{ subItem.classes|join(' ') }}">
+                  <a class="page-list-link" href="{{ subItem.link }}">{{ subItem.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
