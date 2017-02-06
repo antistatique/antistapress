@@ -1,2 +1,6 @@
-// You will use that file to import all your scripts
-// Ex: import gallery from './gallery';
+import $ from 'jquery';
+import tooltip from './tooltip';
+
+$(document).on('ready', () => {
+  tooltip();
+});

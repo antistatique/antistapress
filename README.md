@@ -51,25 +51,21 @@ You have to init the styleguide using
 You can serve the styleguide using:
 `$ gulp serve`.
 
-##### Current issue
-
-We got an issue with the following vendors scripts: `tooltip` & `popover`. They have been removed from the vendors included list.
-
-More info about this generator & our styleguide philosophy: http://frontend.github.io/toolbox/installation.html
+> More info about this generator & our styleguide philosophy: http://frontend.github.io/toolbox/installation.html
 
 #### Wordpress theme
 The theme is located in `/web/app/themes/antistapress`.
 
-If you want to change the template folder name, you'll have to subsequently update the the filepath or name referenced in the following file:
+If you want to change the template folder name, you'll have to subsequently update the the filepath/name referenced in the following file:s
 - `.gitignore`
 - `.stylelintrc`
 - `gulp_config.json`
 - The `style.css` located in your template.
 
 #### [Timber/starter-theme](https://github.com/timber/starter-theme)
-We curently use the starter theme from Timber. It use twig as a templating system. You'll get more infos here 
+We curently use the starter theme from Timber. It uses twig as a templating system. You'll get more info here 
 
-The assets (js, css, vendors) are registered in `function.php`
+The assets (js, css, vendors) are registered & linked in `function.php`
 
 
 ## 🚀 Deploy 
@@ -90,7 +86,6 @@ Run the normal deploy command: `bundle exec cap <stage> deploy`
 
 ## ⚗ Improvements 
 - Create a cli interface (as it has been done for the toolbox-generator) to make it easier to follow the configuration (database, project name, template name, etc..)
-- Find the js conflict error with bootstrap.tooltip.js 
 - Decide if the choice I've made for a starter theme (timber-starter) is the good one. Other candidates includes:
     - [sage (roots.io)](https://github.com/Rareloop/lumberjack) Unfortunately, sage (from roots.io) recently chose to support the blade templating system.
     - [lumberjack](https://github.com/Rareloop/lumberjack)
