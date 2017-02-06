@@ -1,9 +1,9 @@
 {
   "ignoreFiles": [
-    "web/app/themes/antistapress/assets/sass/main.scss",
-    "web/app/themes/antistapress/assets/sass/main-variables.scss",
-    "web/app/themes/antistapress/assets/sass/bootstrap-variables.scss",
-    "web/app/themes/antistapress/assets/sass/bootstrap.scss"
+    "assets/sass/main.scss",
+    "assets/sass/main-variables.scss",
+    "assets/sass/bootstrap-variables.scss",
+    "assets/sass/bootstrap.scss"
   ],
   "extends": "stylelint-config-standard",
   "rules": {
