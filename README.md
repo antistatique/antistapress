@@ -13,17 +13,19 @@ A project template for Wordpress using [Bedrock](https://github.com/roots/bedroc
 
 ## 👉 Step by step tutorial
 
-Firstly, install all the dependencies (core, plugins & styleguide)
+Firstly, create a new database locally
+
+Copy the environment specific configuration file: `$ cp .env.example .env`
+
+Edit the configuration `.env` to reflect your environments information (database, username, salts, etc...)
+
+> Don't forget to include your ACF_PRO_KEY license number.
+
+Then, install all the dependencies (core, plugins & styleguide)
 
 `$ composer install`
 
 `$ npm install`
-
-Create a new database locally
-
-Copy the environment specific configuration file: `$ mv .env.example .env`
-
-Edit the configuration `.env` to reflect your environments information (database, username, salts, etc...)
 
 Set your site vhost document root to `/path/to/site/web`
 
