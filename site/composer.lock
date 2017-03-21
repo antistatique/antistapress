@@ -741,7 +741,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/duo-wordpress.2.5.3.zip",
-                "reference": "tags/2.5.3",
+                "reference": null,
                 "shasum": null
             },
             "require": {
