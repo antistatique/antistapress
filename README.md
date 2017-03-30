@@ -15,7 +15,7 @@ A project template for Wordpress using [Bedrock](https://github.com/roots/bedroc
 * [vagrant-hostmanager](https://github.com/smdahlen/vagrant-hostmanager#installation)
 
 ## 👉 Step by step tutorial
-Firstly edit located in `trellis/group_vars/development/wordpress_sites.yml` to reflect you environment (site domain, etc). You shoud edit everywhere a `antistapress` is present.
+Firstly edit `trellis/group_vars/development/wordpress_sites.yml` & `trellis/group_vars/development/wordpress_sites.yml` to reflect you environment (site domain, etc). You shoud edit everywhere a `antistapress` is present.
 
 Go to the site directory `cd trellis` & launch the dev environment `vagrant up`
 
@@ -23,15 +23,14 @@ Then go to the site directory `cd ../site` and install all the dependencies (cor
 
 `$ composer install`
 
-> You will have to 
-
 `$ yarn`
 
 Access you site at the domain you specified. The WP admin is accessible at `http://[site-domain]/wp/wp-admin`. Follow the WP installation procedure.
 
 ## 🛠 Plugins
 #### ACF 
-Don't forget to fill the acf-pro license key in the `.env` configuration file
+Don't forget to fill the acf-pro license key in the `vault.yml` configuration file :
+```ACF_PRO_KEY=blablabla-license-key```
 
 #### Installation
 To add a plugin, use `$ composer require <namespace>/<packagename>`. 
