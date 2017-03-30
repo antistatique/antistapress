@@ -1,36 +1,37 @@
 # Antistapress
-A project template for Wordpress using [Bedrock](https://github.com/roots/bedrock) from roots.io & the [Toolbox Generator](https://github.com/frontend/generator-toolbox) from Antistatique and using vagrant for the local environment virtualization.
+A project template for Wordpress using [Bedrock](https://github.com/roots/bedrock) from roots.io & the [Toolbox Generator](https://github.com/frontend/generator-toolbox) from Antistatique
 
 ## ✅ What you'll need (locally)
-* Ruby >= 1.9
-* [npm](https://nodejs.org/en/download/)
-* [composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
-* [capistrano](https://github.com/capistrano/capistrano) (> 3.1.0)
-* [capistrano-composer](https://github.com/capistrano/composer)
-* [generator-toolbox](https://github.com/frontend/generator-toolbox)
-* [Ansible](http://docs.ansible.com/ansible/intro_installation.html#latest-releases-via-pip) >= 2.2
-* [Virtualbox](https://www.virtualbox.org/wiki/Downloads) >= 4.3.10
-* [Vagrant](https://www.vagrantup.com/downloads.html) >= 1.8.5
-* [vagrant-bindfs](https://github.com/gael-ian/vagrant-bindfs#installation) >= 0.3.1 (Windows users may skip this)
-* [vagrant-hostmanager](https://github.com/smdahlen/vagrant-hostmanager#installation)
+- PHP >= 5.6 ([A good environment practice on MacOs Sierra](https://getgrav.org/blog/macos-sierra-apache-multiple-php-versions))
+- MySQL
+- Ruby >= 1.9
+- [npm](https://nodejs.org/en/download/)
+- [composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
+- [capistrano](https://github.com/capistrano/capistrano) (> 3.1.0)
+- [capistrano-composer](https://github.com/capistrano/composer)
+- [generator-toolbox](https://github.com/frontend/generator-toolbox)
 
 ## 👉 Step by step tutorial
-Firstly edit `trellis/group_vars/development/wordpress_sites.yml` & `trellis/group_vars/development/wordpress_sites.yml` to reflect you environment (site domain, etc). You shoud edit everywhere a `antistapress` is present.
 
-Go to the site directory `cd trellis` & launch the dev environment `vagrant up`
+Firstly, copy the environment specific configuration file: `$ mv .env.example .env`
 
-Then go to the site directory `cd ../site` and install all the dependencies (core, plugins & styleguide).
+Edit the configuration `.env` to reflect your environments information (database, username, salts, etc...)
+
+Create the new database locally & set your hosts to `localhost` & apache vhost configuration's root to `/path/to/site/web`
+
+Install all the dependencies (core, plugins & styleguide)
 
 `$ composer install`
 
 `$ yarn`
 
-Access you site at the domain you specified. The WP admin is accessible at `http://[site-domain]/wp/wp-admin`. Follow the WP installation procedure.
+> You'll probably have an error with the ACF license (see below). Don't forget to mention the license key of this premium package in `.env` under `ACF_PRO_KEY`.
+
+Access WP admin at `http://[site-domain].com/wp/wp-admin` and follow the installation procedure.
 
 ## 🛠 Plugins
 #### ACF 
-Don't forget to fill the acf-pro license key in the `vault.yml` configuration file :
-```ACF_PRO_KEY=blablabla-license-key```
+Don't forget to fill the acf-pro license key in the `.env` configuration file
 
 #### Installation
 To add a plugin, use `$ composer require <namespace>/<packagename>`. 
@@ -56,6 +57,8 @@ You can serve the styleguide using:
 The theme is located in `/web/app/themes/antistapress`.
 
 If you want to change the template folder name, you'll have to subsequently update the the filepath/name referenced in the following file:s
+- `.gitignore`
+- `.stylelintrc`
 - `gulp_config.json`
 - The `style.css` located in your template.
 
