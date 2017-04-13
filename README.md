@@ -131,9 +131,9 @@ The assets (js, css, vendors) are registered & linked in `lumberjack/src/Functio
 
 
 ## 🚀 Deploy 
-`$ gem install capistrano`
-
-`$ gem install capistrano-composer`
+```
+$ bundle install
+```
 
 Edit your `config/deploy/` stage/environment configs to set the roles/servers and connection options.
 
@@ -143,8 +143,8 @@ Add your `.env` file to `shared/` in your deploy_to path on the remote server fo
 
 Run the normal deploy command: `bundle exec cap <stage> deploy`
 
-* Deploy: `cap production deploy`
-* Rollback: `cap production deploy:rollback`
+* Deploy: `bundle exec cap production deploy`
+* Rollback: `bundle exec cap production deploy:rollback`
 
 ## ⚗ Improvements 
 - Adds WPML as a package
