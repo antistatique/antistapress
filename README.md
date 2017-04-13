@@ -56,12 +56,14 @@ $ yo toolbox
 Install all the dependencies (core, plugins & styleguide) with:
 
 ```
-$ composer install && yarn
+$ composer install
 ```
 
 > You'll probably have an error with the ACF license (see below). Don't forget to mention the license key of this premium package in `.env` under `ACF_PRO_KEY`.
 
-Access WP admin at `http://[site-domain].com/wp/wp-admin` and follow the installation procedure.
+Access WP admin at `http://[site-domain]/wp/wp-admin` and follow the installation procedure.
+
+You can then **activate** your custom **theme** on `http://[site-domain]/wp/wp-admin/themes.php`
 
 ## 💄 Theme
 
