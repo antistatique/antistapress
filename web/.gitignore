@@ -1,0 +1,11 @@
+# Bedrock
+app/plugins/*
+!app/plugins/.gitkeep
+app/mu-plugins/*/
+app/upgrade
+app/uploads/*
+!app/uploads/.gitkeep
+
+# WordPress
+wp
+.htaccess

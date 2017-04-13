@@ -13,11 +13,10 @@
  * @since   Timber 0.1
  */
 
+use Timber\Timber;
+use Lumberjack\PostTypes\Post;
+
 $context = Timber::get_context();
-$context['posts'] = Timber::get_posts();
-$context['foo'] = 'bar';
-$templates = array( 'index.twig' );
-if ( is_home() ) {
-	array_unshift( $templates, 'home.twig' );
-}
-Timber::render( $templates, $context );
+$context['posts'] = Post::all();
+
+Timber::render(['posts.twig'], $context);

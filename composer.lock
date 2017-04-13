@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c92ff1fd9c32e139a56eb5983d74e4b7",
-    "content-hash": "bf1c3a3f9b7ffec9284062693c779185",
+    "hash": "eeea8076f817faeb34d67449eeb9036b",
+    "content-hash": "07ea203833f3e14cfd691d52b31d3ea5",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -21,111 +21,6 @@
                 "philippbaschke/acf-pro-installer": "^1.0"
             },
             "type": "wordpress-muplugin"
-        },
-        {
-            "name": "altorouter/altorouter",
-            "version": "v1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dannyvankooten/AltoRouter.git",
-                "reference": "09d9d946c546bae6d22a7654cdb3b825ffda54b4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dannyvankooten/AltoRouter/zipball/09d9d946c546bae6d22a7654cdb3b825ffda54b4",
-                "reference": "09d9d946c546bae6d22a7654cdb3b825ffda54b4",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "AltoRouter.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Danny van Kooten",
-                    "email": "dannyvankooten@gmail.com",
-                    "homepage": "http://dannyvankooten.com/"
-                },
-                {
-                    "name": "Koen Punt",
-                    "homepage": "https://github.com/koenpunt"
-                },
-                {
-                    "name": "niahoo",
-                    "homepage": "https://github.com/niahoo"
-                }
-            ],
-            "description": "A lightning fast router for PHP",
-            "homepage": "https://github.com/dannyvankooten/AltoRouter",
-            "keywords": [
-                "lightweight",
-                "router",
-                "routing"
-            ],
-            "time": "2014-04-16 09:44:40"
-        },
-        {
-            "name": "asm89/twig-cache-extension",
-            "version": "1.3.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/asm89/twig-cache-extension.git",
-                "reference": "630ea7abdc3fc62ba6786c02590a1560e449cf55"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/asm89/twig-cache-extension/zipball/630ea7abdc3fc62ba6786c02590a1560e449cf55",
-                "reference": "630ea7abdc3fc62ba6786c02590a1560e449cf55",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2",
-                "twig/twig": "^1.0|^2.0"
-            },
-            "require-dev": {
-                "doctrine/cache": "~1.0"
-            },
-            "suggest": {
-                "psr/cache-implementation": "To make use of PSR-6 cache implementation via PsrCacheAdapter."
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.3-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Alexander",
-                    "email": "iam.asm89@gmail.com"
-                }
-            ],
-            "description": "Cache fragments of templates directly within Twig.",
-            "homepage": "https://github.com/asm89/twig-cache-extension",
-            "keywords": [
-                "cache",
-                "extension",
-                "twig"
-            ],
-            "time": "2017-01-10 22:04:15"
         },
         {
             "name": "composer/installers",
@@ -229,20 +124,58 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.7.1",
+            "version": "4.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "6a6a20e568db37fb501fe9deb75ed2a8600d1b30"
+                "reference": "9f1f8eb6c37d10d73b9d7946c0ab5425a5492a9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/6a6a20e568db37fb501fe9deb75ed2a8600d1b30",
-                "reference": "6a6a20e568db37fb501fe9deb75ed2a8600d1b30",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/9f1f8eb6c37d10d73b9d7946c0ab5425a5492a9a",
+                "reference": "9f1f8eb6c37d10d73b9d7946c0ab5425a5492a9a",
                 "shasum": ""
             },
             "require": {
+                "johnpbloch/wordpress-core": "4.7.3",
                 "johnpbloch/wordpress-core-installer": "~0.2",
+                "php": ">=5.3.2"
+            },
+            "type": "package",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "WordPress Community",
+                    "homepage": "http://wordpress.org/about/"
+                }
+            ],
+            "description": "WordPress is web software you can use to create a beautiful website or blog.",
+            "homepage": "http://wordpress.org/",
+            "keywords": [
+                "blog",
+                "cms",
+                "wordpress"
+            ],
+            "time": "2017-03-18 04:47:24"
+        },
+        {
+            "name": "johnpbloch/wordpress-core",
+            "version": "4.7.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnpbloch/wordpress-core.git",
+                "reference": "21255f593ac7db93892724321f468c276b15aa65"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/21255f593ac7db93892724321f468c276b15aa65",
+                "reference": "21255f593ac7db93892724321f468c276b15aa65",
+                "shasum": ""
+            },
+            "require": {
                 "php": ">=5.3.2"
             },
             "type": "wordpress-core",
@@ -260,9 +193,10 @@
             "homepage": "http://wordpress.org/",
             "keywords": [
                 "blog",
-                "cms"
+                "cms",
+                "wordpress"
             ],
-            "time": "2017-01-11 17:46:47"
+            "time": "2017-03-06 18:43:41"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -468,179 +402,6 @@
             "time": "2016-03-01 16:27:06"
         },
         {
-            "name": "timber/timber",
-            "version": "1.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/timber/timber.git",
-                "reference": "c7f76559ea65299c231375f4c4a62e67cd86ff00"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/timber/timber/zipball/c7f76559ea65299c231375f4c4a62e67cd86ff00",
-                "reference": "c7f76559ea65299c231375f4c4a62e67cd86ff00",
-                "shasum": ""
-            },
-            "require": {
-                "asm89/twig-cache-extension": "~1.0",
-                "composer/installers": "~1.0",
-                "php": ">=5.3.0",
-                "twig/twig": "1.*",
-                "upstatement/routes": "0.4"
-            },
-            "require-dev": {
-                "jarednova/markdowndocs": "dev-master",
-                "phpdocumentor/phpdocumentor": "2.*",
-                "phpunit/phpunit": "~4.0",
-                "satooshi/php-coveralls": "1.0.*",
-                "wpackagist-plugin/advanced-custom-fields": "4.*",
-                "wpackagist-plugin/co-authors-plus": "3.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Timber\\": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jared Novack",
-                    "email": "jared@upstatement.com",
-                    "homepage": "http://upstatement.com"
-                },
-                {
-                    "name": "Connor J. Burton",
-                    "email": "connorjburton@gmail.com",
-                    "homepage": "http://connorburton.com"
-                }
-            ],
-            "description": "Plugin to write WordPress themes w Object-Oriented Code and the Twig Template Engine",
-            "homepage": "http://timber.upstatement.com",
-            "keywords": [
-                "templating",
-                "themes",
-                "timber",
-                "twig"
-            ],
-            "time": "2017-01-10 17:02:07"
-        },
-        {
-            "name": "twig/twig",
-            "version": "v1.31.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/twigphp/Twig.git",
-                "reference": "ddc9e3e20ee9c0b6908f401ac8353635b750eca7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/ddc9e3e20ee9c0b6908f401ac8353635b750eca7",
-                "reference": "ddc9e3e20ee9c0b6908f401ac8353635b750eca7",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2.7"
-            },
-            "require-dev": {
-                "symfony/debug": "~2.7",
-                "symfony/phpunit-bridge": "~3.2"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.31-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Twig_": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
-                    "name": "Armin Ronacher",
-                    "email": "armin.ronacher@active-4.com",
-                    "role": "Project Founder"
-                },
-                {
-                    "name": "Twig Team",
-                    "homepage": "http://twig.sensiolabs.org/contributors",
-                    "role": "Contributors"
-                }
-            ],
-            "description": "Twig, the flexible, fast, and secure template language for PHP",
-            "homepage": "http://twig.sensiolabs.org",
-            "keywords": [
-                "templating"
-            ],
-            "time": "2017-01-11 19:36:15"
-        },
-        {
-            "name": "upstatement/routes",
-            "version": "0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Upstatement/routes.git",
-                "reference": "fae7d46f56e8b5775f072774941a5f0a25cb86f3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Upstatement/routes/zipball/fae7d46f56e8b5775f072774941a5f0a25cb86f3",
-                "reference": "fae7d46f56e8b5775f072774941a5f0a25cb86f3",
-                "shasum": ""
-            },
-            "require": {
-                "altorouter/altorouter": "1.1.0",
-                "composer/installers": "~1.0",
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "3.7.*",
-                "satooshi/php-coveralls": "dev-master",
-                "wp-cli/wp-cli": "*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Routes": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jared Novack",
-                    "email": "jared@upstatement.com",
-                    "homepage": "http://upstatement.com"
-                }
-            ],
-            "description": "Manage rewrites and routes in WordPress with this dead-simple plugin",
-            "homepage": "http://routes.upstatement.com",
-            "keywords": [
-                "redirects",
-                "rewrite",
-                "routes",
-                "routing"
-            ],
-            "time": "2016-07-06 12:53:24"
-        },
-        {
             "name": "vlucas/phpdotenv",
             "version": "v2.4.0",
             "source": {
@@ -689,21 +450,41 @@
                 "environment"
             ],
             "time": "2016-09-01 10:05:43"
+        },
+        {
+            "name": "wpackagist-plugin/timber-library",
+            "version": "1.2.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/timber-library/",
+                "reference": "tags/1.2.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/timber-library.1.2.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/timber-library/"
         }
     ],
     "packages-dev": [
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "2.7.1",
+            "version": "2.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "9b324f3a1132459a7274a0ace2e1b766ba80930f"
+                "reference": "d7cf0d894e8aa4c73712ee4a331cc1eaa37cdc7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/9b324f3a1132459a7274a0ace2e1b766ba80930f",
-                "reference": "9b324f3a1132459a7274a0ace2e1b766ba80930f",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/d7cf0d894e8aa4c73712ee4a331cc1eaa37cdc7d",
+                "reference": "d7cf0d894e8aa4c73712ee4a331cc1eaa37cdc7d",
                 "shasum": ""
             },
             "require": {
@@ -768,7 +549,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2016-11-30 04:02:31"
+            "time": "2017-03-01 22:17:45"
         }
     ],
     "aliases": [],
