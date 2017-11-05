@@ -5,7 +5,7 @@ A project template for Wordpress using [Bedrock](https://github.com/roots/bedroc
 - PHP >= 5.6 ([A good environment practice on MacOs Sierra](https://getgrav.org/blog/macos-sierra-apache-multiple-php-versions))
 - MySQL
 - Ruby >= 1.9
-- [nodejs >= 7.6](https://nodejs.org/en/download/) 
+- [nodejs >= 7.6](https://nodejs.org/en/download/)
 - [npm](https://nodejs.org/en/download/)
 - [composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
 - [capistrano](https://github.com/capistrano/capistrano) (> 3.1.0)
@@ -33,14 +33,14 @@ you can then generate a brand new Wordpress environment by just typing the follo
 $ antistapress-generator -n [project-name] -t [theme-name]
 ```
 
-More info on [antistatique/antistatique-generator](https://github.com/antistatique/antistatique-generator)
+More info on [antistatique/antistapress-generator](https://github.com/antistatique/antistapress-generator)
 
 
 ## 👉 Step by step tutorial
 
-Firstly, copy the **environment** specific configuration file: 
+Firstly, copy the **environment** specific configuration file:
 ```
-$ mv .env.example .env
+$ cp .env.example .env
 ``
 
 Edit the configuration `.env` to reflect your environments information (database, username, salts, etc...)
@@ -82,11 +82,11 @@ $ gulp serve
 > More info about this generator & our styleguide philosophy: http://frontend.github.io/toolbox/installation.html
 
 ## 🛠 Plugins
-#### ACF 
+#### ACF
 Don't forget to fill the acf-pro license key in the `.env` configuration file
 
 #### Installation
-To add a plugin, use `$ composer require <namespace>/<packagename>`. 
+To add a plugin, use `$ composer require <namespace>/<packagename>`.
 If it's from WordPress Packagist then the namespace is always wpackagist-plugin.
 
 #### Update
@@ -127,12 +127,12 @@ and then, you can add a line in the `require` section:
 The theme is located in `/web/app/themes/THEME_NAME`.
 
 #### [lumberjack](https://github.com/Rareloop/lumberjack)
-We curently use the starter theme Lumberjack. It uses twig as a templating system. You'll get more info here 
+This starter is largely inspired by the starter theme Lumberjack. It uses twig as a templating system. You'll get more info here
 
-The assets (js, css, vendors) are registered & linked in `lumberjack/src/Functions/Assets.php`
+The assets (js, css, vendors) are registered & linked in `app/src/Functions/Assets.php`
 
 
-## 🚀 Deploy 
+## 🚀 Deploy
 ```
 $ bundle install
 ```
@@ -148,7 +148,7 @@ Run the normal deploy command: `bundle exec cap <stage> deploy`
 * Deploy: `bundle exec cap production deploy`
 * Rollback: `bundle exec cap production deploy:rollback`
 
-## ⚗ Improvements 
+## ⚗ Improvements
 - Adds WPML as a package
 - Create a cli interface (as it has been done for the toolbox-generator) to make it easier to follow the configuration (database, project name, template name, etc..)
 - Decide if the choice I've made for a starter theme (Lumberjack) is the good one. Other candidates includes:
