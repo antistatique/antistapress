@@ -12,7 +12,7 @@ global $wp_query;
 
 use Timber\Timber;
 use Timber\User as TimberUser;
-use Lumberjack\PostTypes\Post;
+use App\PostTypes\Post;
 
 $data = Timber::get_context();
 
