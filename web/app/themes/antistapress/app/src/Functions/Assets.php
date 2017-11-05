@@ -24,10 +24,9 @@ class Assets
         // Register the filter
         add_filter($filter, function ($paths) {
             wp_deregister_script('jquery');
-            wp_enqueue_style('main', Assets::asset_path('css/main.css'), [], false, null);
+            wp_enqueue_style('main', Assets::asset_path('css/base.css'), [], false, null);
             wp_enqueue_style('vendors', Assets::asset_path('css/vendors.min.css'), [], false, null);
             wp_enqueue_script('jquery.cdn', '//code.jquery.com/jquery-2.2.4.min.js', [], null, true);
-            wp_enqueue_script('polyfills', Assets::asset_path('js/polyfills.min.js'), [], null, true);
             wp_enqueue_script('vendors', Assets::asset_path('js/vendors.min.js'), [], null, true);
             wp_enqueue_script('bundle', Assets::asset_path('js/vendors.bundle.js'), [], null, true);
             wp_enqueue_script('app', Assets::asset_path('js/app.bundle.js'), [], null, true);
