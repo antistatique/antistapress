@@ -41,7 +41,7 @@ More info on [antistatique/antistapress-generator](https://github.com/antistatiq
 Firstly, copy the **environment** specific configuration file:
 ```
 $ cp .env.example .env
-``
+```
 
 Edit the configuration `.env` to reflect your environments information (database, username, salts, etc...)
 
