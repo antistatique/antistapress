@@ -68,14 +68,14 @@ You can then **activate** your custom **theme** on `http://[site-domain]/wp/wp-a
 ## 💄 Theme
 
 #### Styleguide
-You have to init the styleguide using
+You have to init the serving of the styleguide using
 ```
-$ gulp init
+$ yarn start
 ```
 
-You can serve the styleguide using:
+You can build the styleguide using:
 ```
-$ gulp serve
+$ yarn build
 ```
 
 
