@@ -10,7 +10,7 @@
  */
 
 use Timber\Timber;
-use Lumberjack\PostTypes\Post;
+use App\PostTypes\Post;
 
 $templates = ['search.twig', 'posts.twig', 'generic-page.twig'];
 $context = Timber::get_context();

@@ -1,13 +1,13 @@
 <?php
 
-namespace Lumberjack;
+namespace App;
 
-use Lumberjack\Core\Site;
-use Lumberjack\Config\ThemeSupport;
-use Lumberjack\Config\CustomPostTypes;
-use Lumberjack\Config\CustomTaxonomies;
-use Lumberjack\Config\Menus;
-use Lumberjack\Functions\Assets;
+use App\Core\Site;
+use App\Config\ThemeSupport;
+use App\Config\CustomPostTypes;
+use App\Config\CustomTaxonomies;
+use App\Config\Menus;
+use App\Functions\Assets;
 
 require_once('autoload.php');
 

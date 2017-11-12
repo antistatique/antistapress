@@ -1,6 +1,6 @@
 <?php
 
-namespace Lumberjack\Config;
+namespace App\Config;
 
 class ThemeSupport
 {

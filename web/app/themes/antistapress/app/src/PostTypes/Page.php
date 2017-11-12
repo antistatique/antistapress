@@ -1,6 +1,6 @@
 <?php
 
-namespace Lumberjack\PostTypes;
+namespace App\PostTypes;
 
 class Page extends Post
 {

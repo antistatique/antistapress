@@ -1,8 +1,8 @@
 <?php
 
-namespace Lumberjack\Config;
+namespace App\Config;
 
-use Lumberjack\PostTypes\Project;
+use App\PostTypes\Project;
 
 class CustomPostTypes
 {

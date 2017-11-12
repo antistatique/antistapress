@@ -1,6 +1,6 @@
 <?php
 
-namespace Lumberjack\PostTypes;
+namespace App\PostTypes;
 
 use Timber\Timber;
 use Timber\Post as TimberPost;

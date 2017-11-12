@@ -8,7 +8,7 @@
  */
 
 use Timber\Timber;
-use Lumberjack\PostTypes\Project;
+use App\PostTypes\Project;
 
 $context = Timber::get_context();
 $post = new Project();

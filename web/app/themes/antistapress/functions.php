@@ -9,4 +9,4 @@ Timber::$dirname = [
     'views/templates',
 ];
 
-require_once('lumberjack/bootstrap.php');
+require_once('app/bootstrap.php');
